@@ -19,3 +19,20 @@ if (isset ($_POST['angka'])){
 
 }
 ?>
+
+//Looping while dan Do while
+
+<?php
+if (isset($_POST['angka'])){
+    $data = $_POST['angka'];
+    $i = 1;
+    while ($i <= $data) {
+        echo "angka $i <br>";
+    }
+    $j = 1;
+    do {
+        echo "angka $j <br>";
+        $j++; 
+    } while ($j <= $data);
+}
+?>
